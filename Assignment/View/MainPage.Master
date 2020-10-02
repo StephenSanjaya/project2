@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainPage.master.cs" Inherits="Assignment.View.MainPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        body{
+            background-color: lightgreen;
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .green-theme{
+            background-color: lightgreen
+        }
+        .blue-theme{
+            background-color: lightblue
+        }
+    </style>
+</head>
+<body ID="MainBody" runat="server">
+    <form runat="server">
+    <div id="navigation" runat="server">
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="ChangeTheme" Text="Blue Theme" runat="server" OnClick="ChangeTheme_Click"/>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
